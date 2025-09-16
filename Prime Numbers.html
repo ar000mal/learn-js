@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <script>
+        const lowerNumber = parseInt(prompt("Enter the lower number:"));
+        const higherNumber = parseInt(prompt("Enter the higher number:"));
+
+        document.write("Prime numbers between " + lowerNumber + " and " + higherNumber + " are: <br>");
+
+        for (let i = lowerNumber; i <= higherNumber; i++) {
+            let flag = 0;
+
+            for (let j = 2; j <= i/2 ; j++) {
+                if (i % j === 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+
+            if (flag === 0) {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

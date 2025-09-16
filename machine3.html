@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    body {
+        margin: 0;
+        padding: 0;
+      min-height: 100vh;
+      height: 80
+      66666666666666%;
+      background: linear-gradient(145deg, #a1b9ef 0%, #e4b998 100%);
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-end;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.97);
+      padding: 30px 40px;
+      border-radius: 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+      width: 350px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* Position to right */
+      align-items: center;
+      border-left: 1px solid #eee;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #c0422e;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 6px;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 14px;
+      border: 1px solid #cfcfcf;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    .login-container .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .login-container .remember input {
+      margin-right: 7px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px 0;
+      background: #e05229;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .login-container button:hover {
+      opacity: 0.8;
+    }
+
+    /* Responsive stylesheet */
+    @media (max-width: 480px) {
+      body {
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .login-container {
+        width: 100vw;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 20px 6px;
+        box-shadow: none;
+        border-left: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Form</h2>
+    <form>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="remember">
+        <input type="checkbox" id="remember">
+        <label for="remember" style="font-weight: normal;">Remember Me</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
